@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Draw app</title>
+  </head>
+  <body>
+    <section class="whole">
+      <!--container-->
+      <div class="nav">
+        <!--toolbar-->
+        <h1><u>Draw:</u></h1>
+        <label for="color">Color:</label>
+        <!--stroke-->
+        <input id="color" name="color" type="color" />
+        <label for="size">Line Width:</label>
+        <!--line-width-->
+        <input id="size" name="size" type="number" min="0" value="5" />
+        <button id="clear">Clear</button>
+        <button class="save">Save</button>
+        <input type="number" min="1" id="cislo" />
+        <button class="load">Load</button>
+        <button class="clearLocalStorage">Clear Local Storage</button>
+        <label class="switch">
+          <input class="rect" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <label for=""><=Rectangle on/off</label>
+      </div>
+      <div class="drawBoard">
+        <!--drawing-board-->
+        <canvas class="canvas"></canvas>
+      </div>
+    </section>
+  </body>
+  <script src="main.js"></script>
+</html>
